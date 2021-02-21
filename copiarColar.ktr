@@ -438,13 +438,13 @@
   </notepads>
   <connection>
     <name>cnnMySQL</name>
-    <server>localhost</server>
+    <server>${DB_MYSQL_HOST_NAME}</server>
     <type>MYSQL</type>
     <access>Native</access>
-    <database>cliente</database>
-    <port>3306</port>
-    <username>root</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ce7dc781bed6</password>
+    <database>${DB_MYSQL_DATABASE_NAME}</database>
+    <port>${DB_MYSQL_PORT}</port>
+    <username>${DB_MYSQL_USER}</username>
+    <password>${DB_MYSQL_PWD}</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -463,7 +463,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>3306</attribute>
+        <attribute>${DB_MYSQL_PORT}</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
